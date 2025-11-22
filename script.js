@@ -63,45 +63,37 @@ const ctaButton = document.getElementById('ctaButton');
 const emailInput = document.getElementById('emailInput');
 
 if (ctaButton && emailInput) {
-    ctaButton.addEventListener('click', (e) => {
+    ctaButton.addEventListener('click', async (e) => {
         e.preventDefault();
-        
         const email = emailInput.value.trim();
-        
         if (!email) {
             showMessage('Por favor, insira seu e-mail', 'error');
             emailInput.focus();
             return;
         }
-        
         if (!isValidEmail(email)) {
             showMessage('Por favor, insira um e-mail válido', 'error');
             emailInput.focus();
             return;
         }
-        
-        // Show loading state
         ctaButton.classList.add('loading');
         ctaButton.disabled = true;
         const originalText = ctaButton.innerHTML;
         ctaButton.innerHTML = '<span>Enviando...</span>';
-        
-        // Simulate API call
-        setTimeout(() => {
-            // Reset button
+        try {
+            await window.sendEmail(email);
             ctaButton.classList.remove('loading');
             ctaButton.disabled = false;
             ctaButton.innerHTML = originalText;
-            
-            // Clear input
             emailInput.value = '';
-            
-            // Show success message
-            showMessage('Inscrição realizada com sucesso! Verifique seu e-mail.', 'success');
-        }, API_SIMULATION_DELAY);
+            showMessage('Inscrição enviada! Você receberá novidades por e-mail.', 'success');
+        } catch (err) {
+            ctaButton.classList.remove('loading');
+            ctaButton.disabled = false;
+            ctaButton.innerHTML = originalText;
+            showMessage('Erro ao enviar inscrição. Tente novamente mais tarde.', 'error');
+        }
     });
-    
-    // Allow Enter key to submit
     emailInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             ctaButton.click();
