@@ -48,10 +48,10 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 100) {
-        navbar.style.background = 'rgba(10, 14, 26, 0.95)';
+        navbar.style.background = 'rgba(10, 10, 12, 0.95)';
         navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
     } else {
-        navbar.style.background = 'rgba(10, 14, 26, 0.8)';
+        navbar.style.background = 'rgba(10, 10, 12, 0.8)';
         navbar.style.boxShadow = 'none';
     }
     
@@ -123,7 +123,7 @@ function showMessage(message, type = 'success') {
     messageEl.textContent = message;
     
     if (type === 'error') {
-        messageEl.style.background = 'linear-gradient(135deg, #FF006E, #8338EC)';
+        messageEl.style.background = 'linear-gradient(135deg, #FF004D, #8A00FF)';
     }
     
     document.body.appendChild(messageEl);
@@ -305,8 +305,8 @@ document.querySelectorAll('.btn, .course-btn, .nav-cta, .cta-button').forEach(bu
 });
 
 // Console message for developers
-console.log('%c🚀 Escola de Tecnologia', 'font-size: 24px; font-weight: bold; color: #FF006E;');
-console.log('%cCurioso? Junte-se a nós e aprenda a construir sites incríveis!', 'font-size: 14px; color: #8338EC;');
+console.log('%c🚀 NovaTech Instituto de Tecnologia', 'font-size: 24px; font-weight: bold; color: #FF004D;');
+console.log('%cCurioso? Junte-se a nós e aprenda a construir sites incríveis!', 'font-size: 14px; color: #8A00FF;');
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {

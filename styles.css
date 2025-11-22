@@ -6,15 +6,23 @@
 }
 
 :root {
-    /* Color Palette - Modern Tech Colors */
-    --primary-pink: #FF006E;
-    --primary-purple: #8338EC;
-    --primary-blue: #3A86FF;
-    --accent-cyan: #06FFA5;
+    /* NovaTech Color Palette */
+    --novatech-red: #FF004D;
+    --carbon-black: #0A0A0C;
+    --jet-gray: #232326;
+    --tech-white: #F5F5F7;
+    --neon-blue: #00C2FF;
+    --cyber-purple: #8A00FF;
+    
+    /* Primary Colors (using NovaTech palette) */
+    --primary-pink: #FF004D;
+    --primary-purple: #8A00FF;
+    --primary-blue: #00C2FF;
+    --accent-cyan: #00C2FF;
     --accent-yellow: #FFBE0B;
     
-    /* Grayscale */
-    --gray-50: #F8F9FA;
+    /* Grayscale (updated to NovaTech palette) */
+    --gray-50: #F5F5F7;
     --gray-100: #E9ECEF;
     --gray-200: #DEE2E6;
     --gray-300: #CED4DA;
@@ -22,14 +30,14 @@
     --gray-500: #6C757D;
     --gray-600: #495057;
     --gray-700: #343A40;
-    --gray-800: #212529;
-    --gray-900: #0F1419;
+    --gray-800: #232326;
+    --gray-900: #0A0A0C;
     
     /* Semantic Colors */
-    --background: #0A0E1A;
-    --surface: #141B2D;
+    --background: #0A0A0C;
+    --surface: #232326;
     --surface-light: #1E2A42;
-    --text-primary: #FFFFFF;
+    --text-primary: #F5F5F7;
     --text-secondary: #B0B8C9;
     
     /* Shadows and Effects */
@@ -40,7 +48,7 @@
     
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-display: 'Space Grotesk', var(--font-primary);
+    --font-display: 'Montserrat', var(--font-primary);
 }
 
 html {
@@ -68,7 +76,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(10, 14, 26, 0.8);
+    background: rgba(10, 10, 12, 0.8);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem 0;
@@ -91,8 +99,8 @@ body {
     font-family: var(--font-display);
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--primary-pink);
-    background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple));
+    color: var(--novatech-red);
+    background: linear-gradient(135deg, var(--novatech-red), var(--cyber-purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -123,7 +131,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, var(--primary-pink), var(--primary-purple));
+    background: linear-gradient(90deg, var(--novatech-red), var(--cyber-purple));
     transition: width 0.3s;
 }
 
@@ -133,7 +141,7 @@ body {
 
 .nav-cta {
     padding: 0.625rem 1.5rem;
-    background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple));
+    background: linear-gradient(135deg, var(--novatech-red), var(--cyber-purple));
     border: none;
     border-radius: 8px;
     color: white;
@@ -144,7 +152,7 @@ body {
 
 .nav-cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(255, 0, 110, 0.3);
+    box-shadow: 0 8px 24px rgba(255, 0, 77, 0.3);
 }
 
 .mobile-menu-toggle {
@@ -193,7 +201,7 @@ body {
 .orb-1 {
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, var(--primary-pink), transparent);
+    background: radial-gradient(circle, var(--novatech-red), transparent);
     top: -200px;
     right: -100px;
 }
@@ -201,7 +209,7 @@ body {
 .orb-2 {
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, var(--primary-purple), transparent);
+    background: radial-gradient(circle, var(--cyber-purple), transparent);
     bottom: -100px;
     left: -100px;
     animation-delay: -4s;
@@ -210,7 +218,7 @@ body {
 .orb-3 {
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, var(--primary-blue), transparent);
+    background: radial-gradient(circle, var(--neon-blue), transparent);
     top: 50%;
     left: 50%;
     animation-delay: -2s;
@@ -273,8 +281,8 @@ body {
 }
 
 .gradient-text {
-    color: var(--primary-pink);
-    background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple), var(--primary-blue));
+    color: var(--novatech-red);
+    background: linear-gradient(135deg, var(--novatech-red), var(--cyber-purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -313,14 +321,14 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple));
+    background: linear-gradient(135deg, var(--novatech-red), var(--cyber-purple));
     color: white;
-    box-shadow: 0 4px 16px rgba(255, 0, 110, 0.3);
+    box-shadow: 0 4px 16px rgba(255, 0, 77, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(255, 0, 110, 0.4);
+    box-shadow: 0 8px 24px rgba(255, 0, 77, 0.4);
 }
 
 .btn-secondary {
@@ -350,7 +358,7 @@ body {
     font-family: var(--font-display);
     font-size: 2.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, var(--accent-cyan), var(--primary-blue));
+    background: linear-gradient(135deg, var(--neon-blue), var(--cyber-purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -375,10 +383,10 @@ section {
 .section-badge {
     display: inline-block;
     padding: 0.5rem 1.25rem;
-    background: rgba(131, 56, 236, 0.1);
-    border: 1px solid rgba(131, 56, 236, 0.3);
+    background: rgba(138, 0, 255, 0.1);
+    border: 1px solid rgba(138, 0, 255, 0.3);
     border-radius: 50px;
-    color: var(--primary-purple);
+    color: var(--cyber-purple);
     font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -481,7 +489,7 @@ section {
     top: 1.5rem;
     right: 1.5rem;
     padding: 0.375rem 0.875rem;
-    background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple));
+    background: linear-gradient(135deg, var(--novatech-red), var(--cyber-purple));
     border-radius: 50px;
     font-size: 0.75rem;
     font-weight: 600;
@@ -531,10 +539,10 @@ section {
 
 .course-level {
     padding: 0.25rem 0.75rem;
-    background: rgba(6, 255, 165, 0.1);
-    border: 1px solid rgba(6, 255, 165, 0.3);
+    background: rgba(0, 194, 255, 0.1);
+    border: 1px solid rgba(0, 194, 255, 0.3);
     border-radius: 50px;
-    color: var(--accent-cyan);
+    color: var(--neon-blue);
     font-size: 0.75rem;
     font-weight: 600;
 }
@@ -570,8 +578,8 @@ section {
 
 .course-btn:hover {
     background: rgba(255, 255, 255, 0.1);
-    border-color: var(--primary-purple);
-    box-shadow: 0 4px 16px rgba(131, 56, 236, 0.3);
+    border-color: var(--cyber-purple);
+    box-shadow: 0 4px 16px rgba(138, 0, 255, 0.3);
 }
 
 /* Testimonials Section */
@@ -622,7 +630,7 @@ section {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple));
+    background: linear-gradient(135deg, var(--novatech-red), var(--cyber-purple));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -659,7 +667,7 @@ section {
 .orb-cta-1 {
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, var(--primary-purple), transparent);
+    background: radial-gradient(circle, var(--cyber-purple), transparent);
     top: -200px;
     left: 50%;
     transform: translateX(-50%);
@@ -668,7 +676,7 @@ section {
 .orb-cta-2 {
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, var(--primary-pink), transparent);
+    background: radial-gradient(circle, var(--novatech-red), transparent);
     bottom: -100px;
     right: 10%;
 }
@@ -721,8 +729,8 @@ section {
 
 .cta-input:focus {
     background: rgba(255, 255, 255, 0.08);
-    border-color: var(--primary-purple);
-    box-shadow: 0 0 0 3px rgba(131, 56, 236, 0.1);
+    border-color: var(--cyber-purple);
+    box-shadow: 0 0 0 3px rgba(138, 0, 255, 0.1);
 }
 
 .cta-button {
@@ -730,7 +738,7 @@ section {
     align-items: center;
     gap: 0.5rem;
     padding: 1.25rem 2rem;
-    background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple));
+    background: linear-gradient(135deg, var(--novatech-red), var(--cyber-purple));
     border: none;
     border-radius: 12px;
     color: white;
@@ -743,7 +751,7 @@ section {
 
 .cta-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(255, 0, 110, 0.4);
+    box-shadow: 0 8px 24px rgba(255, 0, 77, 0.4);
 }
 
 .cta-features {
@@ -943,11 +951,11 @@ section {
     top: 100px;
     right: 2rem;
     padding: 1rem 1.5rem;
-    background: linear-gradient(135deg, #06FFA5, #3A86FF);
+    background: linear-gradient(135deg, #00C2FF, #8A00FF);
     border-radius: 12px;
     color: white;
     font-weight: 600;
-    box-shadow: 0 8px 24px rgba(6, 255, 165, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 194, 255, 0.3);
     z-index: 1001;
     animation: slideIn 0.3s ease-out;
 }
