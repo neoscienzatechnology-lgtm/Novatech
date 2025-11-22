@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Escola de Tecnologia - Transforme seu futuro com educação tecnológica de excelência">
+    <title>Escola de Tecnologia | Inovação e Aprendizado</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="url(#gradient1)"/>
+                        <path d="M12 14L20 10L28 14V26L20 30L12 26V14Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M20 10V20M20 20L12 24M20 20L28 24" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="gradient1" x1="0" y1="0" x2="40" y2="40">
+                                <stop offset="0%" stop-color="#FF006E"/>
+                                <stop offset="100%" stop-color="#8338EC"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">Escola de Tecnologia</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <button class="nav-cta">Entrar</button>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span>Transforme seu futuro agora</span>
+                </div>
+                <h1 class="hero-title">
+                    Domine a <span class="gradient-text">Tecnologia</span> que Move o Mundo
+                </h1>
+                <p class="hero-description">
+                    Aprenda com os melhores profissionais do mercado. Cursos práticos, projetos reais e certificação reconhecida. Sua jornada tech começa aqui.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#inscrever" class="btn btn-primary">
+                        <span>Começar Agora</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#cursos" class="btn btn-secondary">
+                        <span>Explorar Cursos</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">10k+</div>
+                        <div class="stat-label">Alunos Ativos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Cursos Disponíveis</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Taxa de Satisfação</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Sobre Nós</span>
+                <h2 class="section-title">Educação Tech de Excelência</h2>
+                <p class="section-description">
+                    Somos uma instituição dedicada a formar os profissionais de tecnologia do futuro
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#grad1)" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="url(#grad1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="url(#grad1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="grad1" x1="2" y1="2" x2="22" y2="22">
+                                    <stop offset="0%" stop-color="#FF006E"/>
+                                    <stop offset="100%" stop-color="#8338EC"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Metodologia Ágil</h3>
+                    <p>Aprenda fazendo. Nossa metodologia prática garante que você desenvolva habilidades reais do mercado de trabalho.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="8" r="5" stroke="url(#grad2)" stroke-width="2"/>
+                            <path d="M3 21C3 16.5 7 14 12 14C17 14 21 16.5 21 21" stroke="url(#grad2)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="grad2" x1="3" y1="3" x2="21" y2="21">
+                                    <stop offset="0%" stop-color="#3A86FF"/>
+                                    <stop offset="100%" stop-color="#8338EC"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Instrutores Expert</h3>
+                    <p>Aprenda com profissionais que atuam nas maiores empresas de tecnologia do mercado.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="url(#grad3)" stroke-width="2"/>
+                            <path d="M9 12L11 14L15 10" stroke="url(#grad3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="grad3" x1="3" y1="3" x2="21" y2="21">
+                                    <stop offset="0%" stop-color="#06FFA5"/>
+                                    <stop offset="100%" stop-color="#3A86FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Certificação Reconhecida</h3>
+                    <p>Certificados validados pelo mercado que comprovam suas competências técnicas.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="url(#grad4)" stroke-width="2" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="grad4" x1="3" y1="2" x2="21" y2="22">
+                                    <stop offset="0%" stop-color="#FFBE0B"/>
+                                    <stop offset="100%" stop-color="#FF006E"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Projetos Reais</h3>
+                    <p>Desenvolva um portfólio robusto com projetos que simulam desafios reais da indústria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="cursos" class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Trilhas de Aprendizado</span>
+                <h2 class="section-title">Cursos que Transformam Carreiras</h2>
+                <p class="section-description">
+                    Escolha sua trilha e domine as tecnologias mais demandadas do mercado
+                </p>
+            </div>
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-badge">Mais Popular</div>
+                    <div class="course-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 7H20M4 12H20M4 17H20" stroke="url(#gradCourse1)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="gradCourse1" x1="4" y1="7" x2="20" y2="17">
+                                    <stop offset="0%" stop-color="#FF006E"/>
+                                    <stop offset="100%" stop-color="#8338EC"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="course-title">Desenvolvimento Full Stack</h3>
+                    <p class="course-description">
+                        Domine front-end e back-end com React, Node.js, e bancos de dados. Do básico ao avançado.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-duration">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 5V8L10.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            12 meses
+                        </span>
+                        <span class="course-level">Intermediário</span>
+                    </div>
+                    <div class="course-features">
+                        <div class="feature">✓ 40+ projetos práticos</div>
+                        <div class="feature">✓ Mentoria individual</div>
+                        <div class="feature">✓ Certificado reconhecido</div>
+                    </div>
+                    <a href="#inscrever" class="course-btn">Saiba Mais</a>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="url(#gradCourse2)" stroke-width="2"/>
+                            <path d="M9 9L15 15M15 9L9 15" stroke="url(#gradCourse2)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="gradCourse2" x1="3" y1="3" x2="21" y2="21">
+                                    <stop offset="0%" stop-color="#3A86FF"/>
+                                    <stop offset="100%" stop-color="#8338EC"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="course-title">Data Science & AI</h3>
+                    <p class="course-description">
+                        Análise de dados, machine learning e inteligência artificial com Python e ferramentas modernas.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-duration">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 5V8L10.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            10 meses
+                        </span>
+                        <span class="course-level">Avançado</span>
+                    </div>
+                    <div class="course-features">
+                        <div class="feature">✓ Projetos com IA</div>
+                        <div class="feature">✓ Datasets reais</div>
+                        <div class="feature">✓ Deploy em produção</div>
+                    </div>
+                    <a href="#inscrever" class="course-btn">Saiba Mais</a>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 15C3 15 5.5 9 12 9C18.5 9 21 15 21 15" stroke="url(#gradCourse3)" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="9" r="2" stroke="url(#gradCourse3)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="gradCourse3" x1="3" y1="9" x2="21" y2="15">
+                                    <stop offset="0%" stop-color="#06FFA5"/>
+                                    <stop offset="100%" stop-color="#3A86FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="course-title">Cloud & DevOps</h3>
+                    <p class="course-description">
+                        AWS, Azure, Docker, Kubernetes e práticas DevOps para infraestrutura moderna.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-duration">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 5V8L10.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            8 meses
+                        </span>
+                        <span class="course-level">Intermediário</span>
+                    </div>
+                    <div class="course-features">
+                        <div class="feature">✓ Hands-on labs</div>
+                        <div class="feature">✓ Certificações cloud</div>
+                        <div class="feature">✓ Pipeline CI/CD</div>
+                    </div>
+                    <a href="#inscrever" class="course-btn">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Depoimentos</span>
+                <h2 class="section-title">O Que Dizem Nossos Alunos</h2>
+                <p class="section-description">
+                    Histórias reais de transformação profissional
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "A Escola de Tecnologia mudou minha carreira. Em 6 meses consegui minha primeira vaga como desenvolvedor Full Stack. O conteúdo é excepcional e os instrutores são muito atenciosos."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>CM</span>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Carlos Mendes</div>
+                            <div class="author-role">Full Stack Developer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excelente plataforma! Os projetos práticos me deram a confiança necessária para trabalhar com Data Science. Hoje atuo em uma das maiores fintechs do país."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>JS</span>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Juliana Silva</div>
+                            <div class="author-role">Data Scientist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FFBE0B">
+                            <path d="M10 1L12.5 7.5L19 8L14 13L15.5 19L10 15.5L4.5 19L6 13L1 8L7.5 7.5L10 1Z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "O curso de Cloud & DevOps foi fundamental para minha transição de carreira. Material atualizado, instrutores experientes e suporte incrível."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>RA</span>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Roberto Alves</div>
+                            <div class="author-role">DevOps Engineer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="inscrever" class="cta-section">
+        <div class="cta-background">
+            <div class="gradient-orb orb-cta-1"></div>
+            <div class="gradient-orb orb-cta-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Pronto Para Transformar Sua Carreira?</h2>
+                <p class="cta-description">
+                    Junte-se a mais de 10.000 alunos que já transformaram suas carreiras com a Escola de Tecnologia. Comece hoje mesmo!
+                </p>
+                <div class="cta-form">
+                    <input type="email" placeholder="Seu melhor e-mail" class="cta-input" id="emailInput">
+                    <button class="cta-button" id="ctaButton">
+                        <span>Inscreva-se Gratuitamente</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="8" stroke="#06FFA5" stroke-width="2"/>
+                            <path d="M7 10L9 12L13 8" stroke="#06FFA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Acesso imediato</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="8" stroke="#06FFA5" stroke-width="2"/>
+                            <path d="M7 10L9 12L13 8" stroke="#06FFA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Sem compromisso</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="8" stroke="#06FFA5" stroke-width="2"/>
+                            <path d="M7 10L9 12L13 8" stroke="#06FFA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Cancele quando quiser</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="url(#gradientFooter)"/>
+                            <path d="M12 14L20 10L28 14V26L20 30L12 26V14Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M20 10V20M20 20L12 24M20 20L28 24" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="gradientFooter" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#FF006E"/>
+                                    <stop offset="100%" stop-color="#8338EC"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>Escola de Tecnologia</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando vidas através da educação tecnológica de excelência.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="#cursos">Full Stack</a></li>
+                        <li><a href="#cursos">Data Science</a></li>
+                        <li><a href="#cursos">Cloud & DevOps</a></li>
+                        <li><a href="#cursos">Mobile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Escola de Tecnologia. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3A2 2 0 0121 5V19A2 2 0 0119 21H5A2 2 0 013 19V5A2 2 0 015 3H19M18.5 18.5V13.2A3.26 3.26 0 0015.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0115.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 008.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 005.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2A10 10 0 002 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21C9.5 20.77 9.5 20.14 9.5 19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26C14.5 19.6 14.5 20.68 14.5 21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2A5.8 5.8 0 0116.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2M7.6 4A3.6 3.6 0 004 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4A3.6 3.6 0 0020 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6M17.25 5.5A1.25 1.25 0 0118.5 6.75A1.25 1.25 0 0117.25 8A1.25 1.25 0 0116 6.75A1.25 1.25 0 0117.25 5.5M12 7A5 5 0 0117 12A5 5 0 0112 17A5 5 0 017 12A5 5 0 0112 7M12 9A3 3 0 009 12A3 3 0 0012 15A3 3 0 0015 12A3 3 0 0012 9Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
