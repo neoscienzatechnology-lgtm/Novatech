@@ -153,7 +153,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements
-document.querySelectorAll('.about-card, .course-card, .testimonial-card').forEach(el => {
+document.querySelectorAll('.about-card, .course-card, .testimonial-card, .syllabus-card').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
 });
